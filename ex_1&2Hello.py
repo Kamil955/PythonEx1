@@ -4,6 +4,7 @@ name = input("Enter your name: ")
 age = input("Enter your age: ")
 name_length = len(name)
 current_year = datetime.now().year
+years_to_18= 18 - int(age)
 
 print("Hello!", name)
 print("Your name has", name_length, "letters and it starts with", name[0])
@@ -18,4 +19,4 @@ elif int(amount_of_money) < 20 and int(age) > 18:
 elif int(amount_of_money) < 20 and int(age) < 18:
     print("You can't buy alcohol, you are too young and poor")
 else: 
-    print("You are too young to buy alcohol")
+    print("You are too young to buy alcohol, come back In", years_to_18, "years")
