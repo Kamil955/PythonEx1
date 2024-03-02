@@ -16,6 +16,6 @@ elif income_type == "Y":
 if int(yearly_income) <=120000:
     tax = int(yearly_income) *0.12
 else :
-    tax = int(yearly_income) *0.12 + (int(yearly_income) - 120000) * 0.32
+    tax = 14400 + (int(yearly_income) - 120000) * 0.32
 
 print("Your tax is", tax)
